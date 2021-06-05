@@ -1,0 +1,65 @@
+<html>
+	<head>
+
+	     <title>3SI Solutions</title>
+
+             <img src="3Si_logo.png" alt="logo" width=350 height=350>
+             <link href="3SI_Solutions.css"rel="stylesheet">
+                 
+         <h1>3SI Solutions</h1>
+	</head>
+        
+	<body topmargin="100"; bottommargin="250"; leftmargin="250">
+        <h2>Quem somos?</h2>
+        <p align = "right">Somos uma empresa com foco na segurança da informação,
+        que busca através da Inteligência Artificial oferecer a cada dia uma conexão mais segura.</p>
+        <h3>Misssão</h3>
+       <p align = "left">Através da I.A. oferecer ao nosso cliente o melhor em segurança.</p>
+        <h4>Visão</h4>
+        <p align = "right">Ser referência no mercado tecnológica oferecendo segurança para toda a América Latina.</p>
+        <h5>Valores</h5>
+        <p align = "left">Qualidade<br/>
+                Inovação<br/>
+                Ética<br/>
+                Transparência<br/>
+                Compromisso<br/>
+                Responsabilidade<br/>
+                </p>
+        <h6>Entre em contato</h6>
+        <form>
+        <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="contact_name" required>
+                </div>
+                <div class="campo">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" name="email" id="contact_e-mail" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone"><strong>Telefone</strong></label>
+                    <input type="tel" name="telefone" id="contact_phone" required>
+                </div>
+
+        </fieldset>
+            <div class="campo">
+                <br>
+                <label for="motivo"><strong>Motivo do contato: </strong></label>
+                <textarea rows="2" style="width: 26em" id="contact_reason" name="motivo"></textarea>
+            </div>
+           <input type="submit" class="enviar" onclick="enviar();" value="Enviar" /><br></br>
+
+        <script type="text/javascript">
+
+            function enviar(){
+                var name = document.getElementById("contact_name").value;
+                alert("Obrigada por entrar em contato conosco " + name + ", em breve receberá o contato de um dos nossos análistas!");
+            }
+        </script>
+        </form>
+
+	</body>
+</html>
+
+
+
